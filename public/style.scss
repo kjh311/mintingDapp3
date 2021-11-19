@@ -1,0 +1,60 @@
+:root {
+  /* --primary: #ebc908; */
+  --primary: #212529;
+  /* --primary-text: #1a1a1a; */
+  --primary-text: #fff;
+  /* --secondary: #ff1dec; */
+  --secondary: #ff0065;
+
+  --secondary-text: #ffffff;
+  --accent: #505050;
+  --accent-text: #ffffff;
+  font-size: 16px;
+  background-color: var(--primary);
+}
+
+.center {
+  text-align: center;
+  margin: 0 !important;
+}
+
+//NAVBAR
+.navbar {
+  width: 100%;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+//ABOUT
+#about {
+  //   background-color: var(--primary);
+  //   margin-top: 2vh;
+  //   margin-bottom: 2vh;
+  color: var(--primary-text);
+}
+
+//ROADMAP
+#road-map {
+  //   background-color: var(--primary);
+  //   margin-top: 2vh;
+  //   margin-bottom: 2vh;
+  color: var(--primary-text) !important;
+}
+
+//MINT
+#mint {
+  //   background-color: var(--primary);
+  color: var(--primary-text) !important;
+}
+
+//TEAM
+#team {
+  //   background-color: var(--primary);
+  color: var(--primary-text) !important;
+}
+
+//FOOTER
+#footer {
+  //   background-color: var(--primary);
+  color: var(--primary-text) !important;
+}
