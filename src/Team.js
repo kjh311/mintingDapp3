@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 class Team extends React.Component {
   render() {
     return (
-      <div id="team">
+      <div id="team" className="section">
         <h1 className="center">Team</h1>
       </div>
     );

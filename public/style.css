@@ -8,31 +8,27 @@
   --secondary-text: #ffffff;
   --accent: #505050;
   --accent-text: #ffffff;
-  font-size: 16px;
-  background-color: var(--primary); }
+  font-size: 16px; }
+
+body {
+  background-color: var(--primary) !important; }
 
 .center {
   text-align: center;
   margin: 0 !important; }
+
+.section {
+  background-color: var(--primary);
+  margin: 2vh;
+  color: var(--primary-text); }
 
 .navbar {
   width: 100%;
   border-radius: 0 !important;
   margin-bottom: 0 !important; }
 
-#about {
-  color: var(--primary-text); }
-
-#road-map {
-  color: var(--primary-text) !important; }
-
-#mint {
-  color: var(--primary-text) !important; }
-
-#team {
-  color: var(--primary-text) !important; }
-
-#footer {
-  color: var(--primary-text) !important; }
+#about .main-logo {
+  width: 100%;
+  padding: 0 20%; }
 
 /*# sourceMappingURL=style.css.map */

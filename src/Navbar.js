@@ -5,7 +5,7 @@ class Navbar extends React.Component {
     // return <h1 className="center">Navbar</h1>;
     return (
       <>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar section navbar-expand-lg navbar-dark bg-dark">
           <button
             className="navbar-toggler"
             type="button"
@@ -38,6 +38,42 @@ class Navbar extends React.Component {
               <li className="nav-item">
                 <a className="nav-link" href="#team">
                   Team
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="https://twitter.com/KevDogNft"
+                  target="_blank"
+                >
+                  <i className="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="https://twitter.com/KevDogNft"
+                  target="_blank"
+                >
+                  {/* <img
+                    className="opensea-logo"
+                    src="/config/images/opensea-logo.png"
+                  /> */}
+                  <i className="fas fa-link"></i>
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="https://twitter.com/KevDogNft"
+                  target="_blank"
+                >
+                  {/* <img
+                    className="opensea-logo"
+                    src="/config/images/opensea-logo.png"
+                  /> */}
+                  <i className="fab fa-discord"></i>
                 </a>
               </li>
             </ul>

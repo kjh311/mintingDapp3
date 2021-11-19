@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Navbar from "./Navbar";
 import App from "./App";
 import About from "./About";
+import OpenSea from "./OpenSea";
 import RoadMap from "./RoadMap";
 import Team from "./Team";
 import Footer from "./Footer";
@@ -18,11 +19,12 @@ ReactDOM.render(
   <Provider store={store}>
     <Navbar />
     <About />
-    <RoadMap />
-    <App />
 
+    <App />
+    <OpenSea />
+    <RoadMap />
     <Team />
-    <Footer />
+    {/* <Footer /> */}
   </Provider>,
   document.getElementById("root")
 );
