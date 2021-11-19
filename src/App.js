@@ -196,6 +196,7 @@ function App() {
   return (
     <s.Screen>
       <s.Container
+        id="mint"
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}

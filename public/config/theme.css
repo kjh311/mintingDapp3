@@ -11,6 +11,25 @@
   --accent-text: #ffffff;
 }
 
-#helloWorld {
+.center {
   text-align: center;
+}
+
+/* .navbar-na,
+.navbar-collapse,
+.navbar {
+  /* text-align: center;
+  margin: 0 auto; */
+  display: flex !important;
+  justify-content: center !important;
+} */
+
+.navbar {
+  width: 100% !important;
+}
+.navbar-expand {
+  /* text-align: center !important;
+  display: flex; */
+  /* align-items: center !important; */
+  /* justify-content: center !important; */
 }

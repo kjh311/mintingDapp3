@@ -1,16 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Navbar from "./Navbar";
 import App from "./App";
-import Under from "./Under";
+import About from "./About";
+import RoadMap from "./RoadMap";
+import Team from "./Team";
+import Footer from "./Footer";
+
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import "./styles/reset.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />,
-    <Under />
+    <Navbar />
+    <About />
+    <RoadMap />
+    <App />
+
+    <Team />
+    <Footer />
   </Provider>,
   document.getElementById("root")
 );
