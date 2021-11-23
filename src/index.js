@@ -24,6 +24,7 @@ ReactDOM.render(
     <OpenSea />
     <RoadMap />
     <Team />
+    <Footer />
     {/* <Footer /> */}
   </Provider>,
   document.getElementById("root")

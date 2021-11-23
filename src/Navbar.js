@@ -18,8 +18,15 @@ class Navbar extends React.Component {
             <span className="navbar-toggler-icon"></span>
           </button>
 
+          {/* <span class="navbar-brand mb-0 h1">Navbar</span> */}
+
+          <a href="#">
+            <img className="nav-logo" src="/config/images/main-logo2.png" />
+          </a>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mr-auto d-flex justify-content-end align-items-center">
+              {/* <a href="#" class="navbar-left"><img src="/path/to/image.png"></a> */}
               <li className="nav-item active">
                 <a className="nav-link" href="#about">
                   About
@@ -35,6 +42,10 @@ class Navbar extends React.Component {
                   Mint
                 </a>
               </li>
+              {/* <li className="nav-item"> */}
+
+              {/* </li> */}
+
               <li className="nav-item">
                 <a className="nav-link" href="#team">
                   Team
