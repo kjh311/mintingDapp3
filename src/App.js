@@ -203,6 +203,7 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
+        <p className="mint-title text-shadow">MINT</p>
         {/* <StyledLogo alt={"logo"} src={"/config/images/logo.png"} /> */}
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
@@ -370,8 +371,17 @@ function App() {
               </>
             )}
             <s.SpacerMedium />
+            <s.SpacerMedium />
+            <a
+              className="add-polygon"
+              href="https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/"
+              target="_blank"
+            >
+              How to add Polygon Network to MetaMask
+            </a>
           </s.Container>
           <s.SpacerLarge />
+
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
@@ -392,6 +402,7 @@ function App() {
             {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
             Once you make the purchase, you cannot undo this action.
           </s.TextDescription>
+
           <s.SpacerSmall />
           <s.TextDescription
             style={{

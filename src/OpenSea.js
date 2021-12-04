@@ -4,7 +4,7 @@ class OpenSea extends React.Component {
   render() {
     return (
       <div id="open-sea" className="section">
-        <h1 className="center">OpenSea</h1>
+        <h1 className="center bubblegum text-shadow">OpenSea</h1>
       </div>
     );
   }

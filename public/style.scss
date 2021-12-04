@@ -1,5 +1,6 @@
 // @import "~react-image-gallery/styles/scss/image-gallery.scss";
 @import "fonts.scss";
+@import "myVariables.scss";
 
 :root {
   /* --primary: #ebc908; */
@@ -17,7 +18,8 @@
 }
 
 body {
-  background-color: var(--primary) !important;
+  // background-color: var(--primary) !important;\
+  background-color: #006582 !important;
 
   font-size: 16px;
 }
@@ -42,6 +44,7 @@ body {
 
 //NAVBAR
 .navbar {
+  font-family: "BubbleGum";
   // width: 1500px !important;
   // max-width: 1500px !important;
 
@@ -67,7 +70,9 @@ body {
   .nav-logo {
     height: 100px !important;
     max-height: 100px !important;
-    padding: 0 10% !important;
+    padding: 0 !important;
+    // padding: 0 10% !important;
+    max-width: 70%;
     // display: block;
     // margin: 0 auto;
     // margin-top: -5vh !important;
@@ -83,14 +88,21 @@ body {
   //   display: none;
   // }
   font-family: "BubbleGum";
+  // font-family: "Superfats";
+  // font-family: "Cotton Butter";
+
+  .intro-digits {
+    font-family: "Superfats";
+  }
 
   .numText {
-    font-family: "BubbleGum";
+    // font-family: "BubbleGum";
   }
 
   .intro-text {
     width: 50vw;
     text-align: center;
+    font-size: 1.5em;
   }
 
   $ig-small-screen: 400px !default;
@@ -541,23 +553,164 @@ body {
       padding: 5px 10px;
     }
   }
+  .about-bottom {
+    margin-top: 5vh !important;
+    @extend %downTriangle;
+    // clip-path: polygon(50% 90%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    // width: 100% !important;
+    // height: 10vh !important;
+    background-color: #006582 !important;
+  }
 }
 
-//OPENSEA
-
-//ROADMAP
-#road-map {
+@media only screen and (max-width: 768px) {
+  .intro-text {
+    font-size: 1.5em !important;
+    width: 90vw !important;
+  }
 }
 
 //MINT
 #mint {
+  // background-color: #05c7ff !important;
+  background-color: #006582 !important;
+
+  .mint-title {
+    font-size: 3em !important;
+    font-family: "BubbleGum" !important;
+  }
+
+  .add-polygon {
+    font-size: 1.5em !important;
+  }
+}
+
+//TRAITS
+
+//OPENSEA
+#open-sea {
+  display: none;
+}
+
+//ROADMAP
+#road-map {
+  .roadmap-top {
+    // width: 100% !important;
+    // height: 10vh !important;
+    // clip-path: polygon(100% 0%, 100% 100%, 50% 10%, 0% 100%, 0% 0%);
+    @extend %upwardTriangle;
+    background-color: #006582;
+    // border: 2px solid red;
+  }
+  .roadmap-li {
+    font-size: 2em !important;
+  }
+  .roadmap-ul {
+    // max-width: 50vw;
+    // text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 0 auto;
+  }
+  .mint-countdown,
+  .minting-time > .react-countdown-container > h1,
+  .react-countdown-container {
+    font-size: 30px !important;
+    text-shadow: 2px 2px #006582;
+    color: var(--secondary) !important;
+  }
+  .phase-six-details {
+    max-width: 60vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .roadmap-bottom {
+    @extend %wave;
+
+    background-color: #212529;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .roadmap-ul {
+    // font-size: 2em !important;
+    // max-width: 100% !important;
+  }
+}
+
+//TRAITS
+#traits {
+  background-color: #006582;
+  // margin: 0 auto;
+  // text-align: center;
+  // display: flex;
+  // align-self: center;
+  // flex-direction: column;
+  margin: auto !important;
+
+  .traits-top {
+    @extend %wave;
+    position: relative;
+    top: -5px !important;
+
+    background-color: #212529;
+  }
+  // .traits-bottom {
+  //   @extend %wave;
+  //   background-color: #006582;
+  // }
+  .traits-title {
+    margin-top: 5vh !important;
+  }
 }
 
 //TEAM
 #team {
+  .team-top {
+    @extend %wave;
+    width: 100% !important;
+    height: 10vh !important;
+    background-color: #006582;
+  }
+  .frame-profile-pic {
+    width: 40vw;
+    max-width: 1000px;
+  }
+  .deviantart-logo {
+    max-width: 75px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    // background-color: #fff;
+    box-shadow: 0px 0px 0px 0px #0ff;
+    transition: all 0.3s;
+  }
+  .deviantart-logo:hover {
+    box-shadow: 0px 0px 10px 10px #0ff;
+    transition: all 0.3s;
+  }
+  .team-bottom {
+    @extend %downTriangle;
+    background-color: #006582;
+    position: relative;
+    top: 3px !important;
+  }
+}
+//team
+@media only screen and (max-width: 768px) {
+  .frame-profile-pic {
+    width: 80% !important;
+  }
 }
 
 //FOOTER
 #footer {
+  .footer-top {
+    // @extend %upwardTriangle;
+  }
+
   border-bottom: 2px solid var(--secondary);
+  background-color: #006582;
 }

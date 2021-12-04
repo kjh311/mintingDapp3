@@ -3,16 +3,16 @@
   "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
   "NETWORK": {
     "NAME": "Polygon",
-    "SYMBOL": "Eth",
+    "SYMBOL": "Matic",
     "ID": 137
   },
   "NFT_NAME": "Dweebles",
-  "SYMBOL": "Dweeble",
+  "SYMBOL": "DB",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 50000000000000000,
-  "DISPLAY_COST": 25,
+  "WEI_COST": 1200000000000000000,
+  "DISPLAY_COST": 120,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/dweebles",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/dweeblez",
   "SHOW_BACKGROUND": false
 }

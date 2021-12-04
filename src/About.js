@@ -251,19 +251,31 @@ class About extends React.Component {
   render() {
     return (
       <div id="about" className="section">
-        {/* <img className="main-logo" src="/config/images/main-logo2.png" /> */}
-        {/* image marquee */}
-        <div className="intro-paragraph d-flex justify-content-center">
-          <h3 className="intro-text">
-            DWEEBLES ARE 10,000 FUN LOVING CHARACTERS LIVING ON THE POLYGON
-            BLOCKCHAIN.
-          </h3>
-        </div>
         <ImageGallery
           items={this.images}
           autoPlay={true}
           showThumbnails={true}
         />
+        <br />
+        <br />
+        <div className="intro-paragraph d-flex justify-content-center">
+          <p className="intro-text">
+            <span className="big-font">DWEEBLEZ</span> are{" "}
+            <span className="intro-digits big-font">10,000</span> fun loving
+            characters living on the Polygon Blockchain...and in your heart
+            (Awww!). <br /> Taking inspiration from <em>Family Guy</em>, King of
+            the Hill, and a bit of Garbage Pail Kids, each Dweeble is a one of a
+            kind, randomly generated artwork made from{" "}
+            <span className="intro-digits big-font">141</span> unique
+            attributes, and will cost{" "}
+            <span className="intro-digits big-font">120 Matic</span> each.
+            <br /> Minting Dec <span className="intro-digits big-font">17</span>
+            th at <span className="intro-digits big-font">7</span>pm PST.
+          </p>
+        </div>
+        <div className="about-bottom">
+          <p className="mint-title">MINT</p>
+        </div>
       </div>
     );
   }

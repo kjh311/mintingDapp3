@@ -9,6 +9,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+.cotton-butter {
+  font-family: "Cotton Butter" !important;
+}
+
 @font-face {
   font-family: "Superfats";
   src: url("Superfats.eot");
@@ -18,6 +23,10 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+.superfats {
+  font-family: "Superfats" !important;
 }
 
 @font-face {
@@ -31,6 +40,10 @@
   font-display: swap;
 }
 
+.bubblegum {
+  font-family: "BubbleGum" !important;
+}
+
 @font-face {
   font-family: "Awesome Possum Demo";
   src: url("AwesomePossumDemo-Regular.eot");
@@ -41,4 +54,8 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+.awesome-possum {
+  font-family: "Awesome Possum Demo" !important;
 }

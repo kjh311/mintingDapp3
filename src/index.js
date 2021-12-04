@@ -5,6 +5,7 @@ import App from "./App";
 import About from "./About";
 import OpenSea from "./OpenSea";
 import RoadMap from "./RoadMap";
+import Traits from "./Traits";
 import Team from "./Team";
 import Footer from "./Footer";
 
@@ -14,15 +15,18 @@ import { Provider } from "react-redux";
 import "./styles/reset.css";
 // import "../public/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+// var countdown  = require('react-countdown-to-future-date');
+// import Countdown from "react-countdown-to-future-date";
 
 ReactDOM.render(
   <Provider store={store}>
     <Navbar />
     <About />
-
+    {/* <Countdown givenDate={"November, 17, 2022"} /> */}
     <App />
     <OpenSea />
     <RoadMap />
+    <Traits />
     <Team />
     <Footer />
     {/* <Footer /> */}

@@ -32,29 +32,30 @@ class Navbar extends React.Component {
                   About
                 </a>
               </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="#road-map">
-                  Roadmap
-                </a>
-              </li>
               <li className="nav-item">
                 <a className="nav-link" href="#mint">
                   Mint
                 </a>
               </li>
+              <li className="nav-item active">
+                <a className="nav-link" href="#road-map">
+                  Roadmap
+                </a>
+              </li>
+
               {/* <li className="nav-item"> */}
 
               {/* </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#team">
                   Team
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="https://twitter.com/KevDogNft"
+                  href="https://twitter.com/dweeblezNFT"
                   target="_blank"
                 >
                   <i className="fab fa-twitter"></i>
@@ -63,13 +64,9 @@ class Navbar extends React.Component {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="https://twitter.com/KevDogNft"
+                  href="https://opensea.io/collection/dweeblez"
                   target="_blank"
                 >
-                  {/* <img
-                    className="opensea-logo"
-                    src="/config/images/opensea-logo.png"
-                  /> */}
                   <i className="fas fa-link"></i>
                 </a>
               </li>
