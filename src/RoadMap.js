@@ -155,6 +155,11 @@ class RoadMap extends React.Component {
                 likeness of their Dweeblez.
               </h4>
             </li>
+            <li>
+              <h4 className="bubblegum">
+                - 300 Dweeblez will be withheld for marketing and givaways.
+              </h4>
+            </li>
           </ul>
         </ul>
         <br />

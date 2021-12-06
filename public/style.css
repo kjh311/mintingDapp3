@@ -395,16 +395,19 @@
   margin-bottom: 0 !important;
   border-bottom: 2px solid var(--secondary) !important;
   border-top: 2px solid var(--secondary) !important; }
+  .navbar .in {
+    height: 0 !important; }
+  .navbar #navbarSupportedContent {
+    height: 100% !important; }
   .navbar .nav-item {
     margin-right: 2vw !important;
     font-size: 1.5em !important; }
   .navbar .navbar-nav {
     float: none !important; }
   .navbar .nav-logo {
-    height: 100px !important;
     max-height: 100px !important;
-    padding: 0 !important;
-    max-width: 70%; }
+    max-height: 100px !important;
+    padding: 0 !important; }
 
 #footer {
   position: relative;

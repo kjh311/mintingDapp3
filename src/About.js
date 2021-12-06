@@ -27,20 +27,20 @@ class About extends React.Component {
 
     this.images = [
       {
-        original: "/config/images/carousel/1.jpg",
-        thumbnail: "/config/images/carousel/1.jpg",
+        original: "/config/images/carousel/1.png",
+        thumbnail: "/config/images/carousel/1.png",
       },
       {
-        original: "/config/images/carousel/2.jpg",
-        thumbnail: "/config/images/carousel/2.jpg",
+        original: "/config/images/carousel/2.png",
+        thumbnail: "/config/images/carousel/2.png",
       },
       {
-        original: "/config/images/carousel/3.jpg",
-        thumbnail: "/config/images/carousel/3.jpg",
+        original: "/config/images/carousel/3.png",
+        thumbnail: "/config/images/carousel/3.png",
       },
       {
-        original: "/config/images/carousel/4.jpg",
-        thumbnail: "/config/images/carousel/4.jpg",
+        original: "/config/images/carousel/4.png",
+        thumbnail: "/config/images/carousel/4.png",
       },
       {
         original: "/config/images/carousel/5.jpg",

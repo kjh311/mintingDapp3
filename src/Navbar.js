@@ -5,7 +5,7 @@ class Navbar extends React.Component {
     // return <h1 className="center">Navbar</h1>;
     return (
       <>
-        <nav className="navbar section navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar section navbar-expand-md navbar-dark bg-dark">
           <button
             className="navbar-toggler"
             type="button"
