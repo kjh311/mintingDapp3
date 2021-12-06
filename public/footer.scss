@@ -1,0 +1,27 @@
+//FOOTER
+#footer {
+  position: relative;
+  z-index: 2;
+  ul {
+    padding-left: 0 !important;
+  }
+  .links-div {
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+  }
+  .footer-top {
+    // @extend %upwardTriangle;
+  }
+
+  border-bottom: 2px solid var(--secondary);
+  background-color: #006582;
+
+  .links-li > a > .fa-2x {
+    color: #c7c8c9 !important;
+    transition: all 0.3s;
+  }
+  .links-li > a > .fa-2x:hover {
+    color: #fff !important;
+    transition: all 0.3s;
+  }
+}

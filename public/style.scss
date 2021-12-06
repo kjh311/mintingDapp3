@@ -1,6 +1,15 @@
 // @import "~react-image-gallery/styles/scss/image-gallery.scss";
 @import "fonts.scss";
-@import "myVariables.scss";
+@import "traits.scss";
+@import "about.scss";
+@import "navbar.scss";
+
+@import "footer.scss";
+@import "roadmap.scss";
+@import "opensea.scss";
+@import "team.scss";
+@import "app.scss";
+// @import "myVariables.scss";
 
 :root {
   /* --primary: #ebc908; */
@@ -9,7 +18,7 @@
   --primary-text: #fff;
   /* --secondary: #ff1dec; */
   --secondary: #ff0065;
-
+  --blue: #006582;
   --secondary-text: #ffffff;
   --accent: #505050;
   --accent-text: #ffffff;
@@ -19,7 +28,8 @@
 
 body {
   // background-color: var(--primary) !important;\
-  background-color: #006582 !important;
+  // background-color: #006582 !important;
+  background-color: black !important;
 
   font-size: 16px;
 }
@@ -42,675 +52,169 @@ body {
   border-right: 2px solid var(--secondary) !important;
 }
 
-//NAVBAR
-.navbar {
-  font-family: "BubbleGum";
-  // width: 1500px !important;
-  // max-width: 1500px !important;
-
-  // text-align: center !important;
-  // margin: 0 auto !important;
-  padding: 0 !important;
-  // position: fixed !important;
-  top: 0;
-  z-index: 1000 !important;
-  border-radius: 0 !important;
-  margin-bottom: 0 !important;
-  border-bottom: 2px solid var(--secondary) !important;
-
-  .nav-item {
-    margin-right: 2vw !important;
-    font-size: 1.5em !important;
-  }
-  .navbar-nav {
-    float: none !important;
-  }
-  .navbar-collapse {
-  }
-  .nav-logo {
-    height: 100px !important;
-    max-height: 100px !important;
-    padding: 0 !important;
-    // padding: 0 10% !important;
-    max-width: 70%;
-    // display: block;
-    // margin: 0 auto;
-    // margin-top: -5vh !important;
-  }
+//CLIP PATHS
+%upwardTriangle {
+  width: 100% !important;
+  height: 10vh !important;
+  clip-path: polygon(100% 0%, 100% 100%, 50% 10%, 0% 100%, 0% 0%);
 }
 
-//ABOUT
-#about {
-  // margin-top: 80px !important;
-  padding-top: 20px !important;
-  //marquee
-  // .mySlides {
-  //   display: none;
-  // }
-  font-family: "BubbleGum";
-  // font-family: "Superfats";
-  // font-family: "Cotton Butter";
-
-  .intro-digits {
-    font-family: "Superfats";
-  }
-
-  .numText {
-    // font-family: "BubbleGum";
-  }
-
-  .intro-text {
-    width: 50vw;
-    text-align: center;
-    font-size: 1.5em;
-  }
-
-  $ig-small-screen: 400px !default;
-  $ig-xsmall-screen: 400px !default;
-  $ig-white: #fff !default;
-  $ig-black: #000 !default;
-  $ig-blue: #337ab7 !default;
-  $ig-background-black: rgba(0, 0, 0, 0.4) !default;
-  $ig-transparent: rgba(0, 0, 0, 0) !default;
-  $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
-
-  @mixin vendor-prefix($name, $value) {
-    @each $vendor in ("-webkit-", "-moz-", "-ms-", "-o-", "") {
-      #{$vendor}#{$name}: #{$value};
-    }
-  }
-
-  // SVG ICON STYLES
-  .image-gallery-icon {
-    color: $ig-white;
-    transition: all 0.3s ease-out;
-    appearance: none;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    outline: none;
-    position: absolute;
-    z-index: 4;
-    filter: drop-shadow($ig-shadow);
-
-    @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        color: $ig-blue;
-        .image-gallery-svg {
-          transform: scale(1.1);
-        }
-      }
-    }
-
-    &:focus {
-      // a11y support
-      outline: 2px solid $ig-blue;
-    }
-  }
-
-  .image-gallery-using-mouse {
-    .image-gallery-icon {
-      &:focus {
-        outline: none;
-      }
-    }
-  }
-
-  .image-gallery-fullscreen-button,
-  .image-gallery-play-button {
-    bottom: 0;
-    padding: 20px;
-
-    .image-gallery-svg {
-      height: 28px;
-      width: 28px;
-    }
-
-    @media (max-width: $ig-small-screen) {
-      padding: 15px;
-
-      .image-gallery-svg {
-        height: 24px;
-        width: 24px;
-      }
-    }
-
-    @media (max-width: $ig-xsmall-screen) {
-      padding: 10px;
-
-      .image-gallery-svg {
-        height: 16px;
-        width: 16px;
-      }
-    }
-  }
-
-  .image-gallery-fullscreen-button {
-    right: 0;
-  }
-
-  .image-gallery-play-button {
-    left: 0;
-  }
-
-  .image-gallery-left-nav,
-  .image-gallery-right-nav {
-    padding: 50px 10px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    .image-gallery-svg {
-      height: 120px;
-      width: 60px;
-    }
-
-    @media (max-width: $ig-small-screen) {
-      .image-gallery-svg {
-        height: 72px;
-        width: 36px;
-      }
-    }
-
-    @media (max-width: $ig-xsmall-screen) {
-      .image-gallery-svg {
-        height: 48px;
-        width: 24px;
-      }
-    }
-
-    &[disabled] {
-      cursor: disabled;
-      opacity: 0.6;
-      pointer-events: none;
-    }
-  }
-
-  .image-gallery-left-nav {
-    left: 0;
-  }
-
-  .image-gallery-right-nav {
-    right: 0;
-  }
-  // End of Icon styles
-
-  .image-gallery {
-    @include vendor-prefix("user-select", none);
-    -webkit-tap-highlight-color: $ig-transparent;
-    position: relative;
-
-    &.fullscreen-modal {
-      background: $ig-black;
-      bottom: 0;
-      height: 100%;
-      left: 0;
-      position: fixed;
-      right: 0;
-      top: 0;
-      width: 100%;
-      z-index: 5;
-
-      .image-gallery-content {
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-  }
-
-  .image-gallery-content {
-    position: relative;
-    line-height: 0;
-    top: 0;
-
-    &.fullscreen {
-      background: $ig-black;
-    }
-
-    .image-gallery-slide .image-gallery-image {
-      max-height: calc(80vh - 80px); // 80 px for the thumbnail space
-    }
-
-    &.left,
-    &.right {
-      .image-gallery-slide .image-gallery-image {
-        max-height: 80vh;
-      }
-    }
-  }
-
-  .image-gallery-slide-wrapper {
-    position: relative;
-
-    &.left,
-    &.right {
-      display: inline-block;
-      width: calc(100% - 110px); // 100px + 10px for margin
-
-      @media (max-width: $ig-small-screen) {
-        width: calc(100% - 87px); // 81px + 6px for margin
-      }
-    }
-    &.image-gallery-rtl {
-      direction: rtl;
-    }
-  }
-
-  .image-gallery-slides {
-    line-height: 0;
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .image-gallery-slide {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-
-    &.center {
-      position: relative;
-    }
-
-    .image-gallery-image {
-      width: 100%;
-      object-fit: contain;
-    }
-
-    .image-gallery-description {
-      background: $ig-background-black;
-      bottom: 70px;
-      color: $ig-white;
-      left: 0;
-      line-height: 1;
-      padding: 10px 20px;
-      position: absolute;
-      white-space: normal;
-
-      @media (max-width: $ig-small-screen) {
-        bottom: 45px;
-        font-size: 0.8em;
-        padding: 8px 15px;
-      }
-    }
-  }
-
-  .image-gallery-bullets {
-    bottom: 20px;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    width: 80%;
-    z-index: 4;
-
-    .image-gallery-bullets-container {
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    .image-gallery-bullet {
-      appearance: none;
-      background-color: transparent;
-      border: 1px solid $ig-white;
-      border-radius: 50%;
-      box-shadow: $ig-shadow;
-      cursor: pointer;
-      display: inline-block;
-      margin: 0 5px;
-      outline: none;
-      padding: 5px;
-      transition: all 0.2s ease-out;
-
-      @media (max-width: $ig-small-screen) {
-        margin: 0 3px;
-        padding: 3px;
-      }
-
-      @media (max-width: $ig-xsmall-screen) {
-        padding: 2.7px;
-      }
-
-      &:focus {
-        transform: scale(1.2);
-        background: $ig-blue;
-        border: 1px solid $ig-blue;
-      }
-
-      &.active {
-        transform: scale(1.2);
-        border: 1px solid $ig-white;
-        background: $ig-white;
-      }
-
-      @media (hover: hover) and (pointer: fine) {
-        &:hover {
-          background: $ig-blue;
-          border: 1px solid $ig-blue;
-        }
-
-        &.active:hover {
-          background: $ig-blue;
-        }
-      }
-    }
-  }
-
-  .image-gallery-thumbnails-wrapper {
-    position: relative;
-
-    &.thumbnails-swipe-horizontal {
-      touch-action: pan-y;
-    }
-
-    &.thumbnails-swipe-vertical {
-      touch-action: pan-x;
-    }
-
-    &.thumbnails-wrapper-rtl {
-      direction: rtl;
-    }
-    &.left,
-    &.right {
-      display: inline-block;
-      vertical-align: top;
-      width: 100px;
-
-      @media (max-width: $ig-small-screen) {
-        width: 81px; // 75px + 6px for border
-      }
-
-      .image-gallery-thumbnails {
-        height: 100%;
-        width: 100%;
-        left: 0;
-        padding: 0;
-        position: absolute;
-        top: 0;
-
-        .image-gallery-thumbnail {
-          display: block;
-          margin-right: 0;
-          padding: 0;
-
-          + .image-gallery-thumbnail {
-            margin-left: 0;
-            margin-top: 2px;
-          }
-        }
-      }
-    }
-
-    &.left,
-    &.right {
-      margin: 0 5px;
-
-      @media (max-width: $ig-small-screen) {
-        margin: 0 3px;
-      }
-    }
-  }
-
-  .image-gallery-thumbnails {
-    overflow: hidden;
-    padding: 5px 0;
-
-    @media (max-width: $ig-small-screen) {
-      padding: 3px 0;
-    }
-
-    .image-gallery-thumbnails-container {
-      cursor: pointer;
-      text-align: center;
-      white-space: nowrap;
-    }
-  }
-
-  .image-gallery-thumbnail {
-    display: inline-block;
-    border: 4px solid transparent;
-    transition: border 0.3s ease-out;
-    width: 100px;
-    background: transparent;
-    padding: 0;
-
-    @media (max-width: $ig-small-screen) {
-      border: 3px solid transparent;
-      width: 81px;
-    }
-
-    + .image-gallery-thumbnail {
-      margin-left: 2px;
-    }
-
-    .image-gallery-thumbnail-inner {
-      display: block;
-      position: relative;
-    }
-
-    .image-gallery-thumbnail-image {
-      vertical-align: middle;
-      width: 100%;
-      line-height: 0;
-    }
-
-    &.active,
-    &:focus {
-      outline: none;
-      border: 4px solid $ig-blue;
-
-      @media (max-width: $ig-small-screen) {
-        border: 3px solid $ig-blue;
-      }
-    }
-
-    @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        outline: none;
-        border: 4px solid $ig-blue;
-
-        @media (max-width: $ig-small-screen) {
-          border: 3px solid $ig-blue;
-        }
-      }
-    }
-  }
-
-  .image-gallery-thumbnail-label {
-    box-sizing: border-box;
-    color: white;
-    font-size: 1em;
-    left: 0;
-    line-height: 1em;
-    padding: 5%;
-    position: absolute;
-    top: 50%;
-    text-shadow: $ig-shadow;
-    transform: translateY(-50%);
-    white-space: normal;
-    width: 100%;
-
-    @media (max-width: $ig-small-screen) {
-      font-size: 0.8em;
-      line-height: 0.8em;
-    }
-  }
-
-  .image-gallery-index {
-    background: $ig-background-black;
-    color: $ig-white;
-    line-height: 1;
-    padding: 10px 20px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 4;
-
-    @media (max-width: $ig-small-screen) {
-      font-size: 0.8em;
-      padding: 5px 10px;
-    }
-  }
-  .about-bottom {
-    margin-top: 5vh !important;
-    @extend %downTriangle;
-    // clip-path: polygon(50% 90%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
-    // width: 100% !important;
-    // height: 10vh !important;
-    background-color: #006582 !important;
-  }
+%downTriangle {
+  clip-path: polygon(50% 90%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  width: 100% !important;
+  height: 10vh !important;
 }
 
-@media only screen and (max-width: 768px) {
-  .intro-text {
-    font-size: 1.5em !important;
-    width: 90vw !important;
-  }
+%wave {
+  clip-path: polygon(
+    0% 0%,
+    0% 82.5%,
+    1.69492% 84.3293%,
+    3.38983% 86.1385%,
+    5.08475% 87.9078%,
+    6.77966% 89.6179%,
+    8.47458% 91.25%,
+    10.1695% 92.7862%,
+    11.8644% 94.2098%,
+    13.5593% 95.505%,
+    15.2542% 96.6578%,
+    16.9492% 97.6555%,
+    18.6441% 98.487%,
+    20.339% 99.1435%,
+    22.0339% 99.6176%,
+    23.7288% 99.9041%,
+    25.4237% 100%,
+    27.1186% 99.9041%,
+    28.8136% 99.6176%,
+    30.5085% 99.1435%,
+    32.2034% 98.487%,
+    33.8983% 97.6555%,
+    35.5932% 96.6578%,
+    37.2881% 95.505%,
+    38.9831% 94.2098%,
+    40.678% 92.7862%,
+    42.3729% 91.25%,
+    44.0678% 89.6179%,
+    45.7627% 87.9078%,
+    47.4576% 86.1385%,
+    49.1525% 84.3293%,
+    50.8475% 82.5%,
+    52.5424% 80.6708%,
+    54.2373% 78.8616%,
+    55.9322% 77.0922%,
+    57.6271% 75.3821%,
+    59.322% 73.75%,
+    61.017% 72.2138%,
+    62.7119% 70.7902%,
+    64.4068% 69.495%,
+    66.1017% 68.3422%,
+    67.7966% 67.3446%,
+    69.4915% 66.513%,
+    71.1864% 65.8565%,
+    72.8814% 65.3824%,
+    74.5763% 65.0959%,
+    76.2712% 65%,
+    77.9661% 65.0959%,
+    79.661% 65.3824%,
+    81.3559% 65.8565%,
+    83.0509% 66.513%,
+    84.7458% 67.3446%,
+    86.4407% 68.3422%,
+    88.1356% 69.495%,
+    89.8305% 70.7902%,
+    91.5254% 72.2138%,
+    93.2203% 73.75%,
+    94.9153% 75.3821%,
+    96.6102% 77.0922%,
+    98.3051% 78.8616%,
+    100% 80.6708%,
+    100% 0%
+  );
+  shape-outside: polygon(
+    0% 0%,
+    0% 82.5%,
+    1.69492% 84.3293%,
+    3.38983% 86.1385%,
+    5.08475% 87.9078%,
+    6.77966% 89.6179%,
+    8.47458% 91.25%,
+    10.1695% 92.7862%,
+    11.8644% 94.2098%,
+    13.5593% 95.505%,
+    15.2542% 96.6578%,
+    16.9492% 97.6555%,
+    18.6441% 98.487%,
+    20.339% 99.1435%,
+    22.0339% 99.6176%,
+    23.7288% 99.9041%,
+    25.4237% 100%,
+    27.1186% 99.9041%,
+    28.8136% 99.6176%,
+    30.5085% 99.1435%,
+    32.2034% 98.487%,
+    33.8983% 97.6555%,
+    35.5932% 96.6578%,
+    37.2881% 95.505%,
+    38.9831% 94.2098%,
+    40.678% 92.7862%,
+    42.3729% 91.25%,
+    44.0678% 89.6179%,
+    45.7627% 87.9078%,
+    47.4576% 86.1385%,
+    49.1525% 84.3293%,
+    50.8475% 82.5%,
+    52.5424% 80.6708%,
+    54.2373% 78.8616%,
+    55.9322% 77.0922%,
+    57.6271% 75.3821%,
+    59.322% 73.75%,
+    61.017% 72.2138%,
+    62.7119% 70.7902%,
+    64.4068% 69.495%,
+    66.1017% 68.3422%,
+    67.7966% 67.3446%,
+    69.4915% 66.513%,
+    71.1864% 65.8565%,
+    72.8814% 65.3824%,
+    74.5763% 65.0959%,
+    76.2712% 65%,
+    77.9661% 65.0959%,
+    79.661% 65.3824%,
+    81.3559% 65.8565%,
+    83.0509% 66.513%,
+    84.7458% 67.3446%,
+    86.4407% 68.3422%,
+    88.1356% 69.495%,
+    89.8305% 70.7902%,
+    91.5254% 72.2138%,
+    93.2203% 73.75%,
+    94.9153% 75.3821%,
+    96.6102% 77.0922%,
+    98.3051% 78.8616%,
+    100% 80.6708%,
+    100% 0%
+  );
+  width: 100% !important;
+  height: 10vh !important;
 }
 
-//MINT
-#mint {
-  // background-color: #05c7ff !important;
-  background-color: #006582 !important;
-
-  .mint-title {
-    font-size: 3em !important;
-    font-family: "BubbleGum" !important;
-  }
-
-  .add-polygon {
-    font-size: 1.5em !important;
-  }
+//colored fonts
+.blue-text {
+  color: #006582;
 }
 
-//TRAITS
-
-//OPENSEA
-#open-sea {
-  display: none;
+.pink-text {
+  color: #ff0065;
 }
 
-//ROADMAP
-#road-map {
-  .roadmap-top {
-    // width: 100% !important;
-    // height: 10vh !important;
-    // clip-path: polygon(100% 0%, 100% 100%, 50% 10%, 0% 100%, 0% 0%);
-    @extend %upwardTriangle;
-    background-color: #006582;
-    // border: 2px solid red;
-  }
-  .roadmap-li {
-    font-size: 2em !important;
-  }
-  .roadmap-ul {
-    // max-width: 50vw;
-    // text-align: center;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // margin: 0 auto;
-  }
-  .mint-countdown,
-  .minting-time > .react-countdown-container > h1,
-  .react-countdown-container {
-    font-size: 30px !important;
-    text-shadow: 2px 2px #006582;
-    color: var(--secondary) !important;
-  }
-  .phase-six-details {
-    max-width: 60vw;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .roadmap-bottom {
-    @extend %wave;
-
-    background-color: #212529;
-  }
+.big-font {
+  font-size: 40px !important;
 }
 
-@media only screen and (max-width: 768px) {
-  .roadmap-ul {
-    // font-size: 2em !important;
-    // max-width: 100% !important;
-  }
+.medium-font {
+  font-size: 25px !important;
 }
 
-//TRAITS
-#traits {
-  background-color: #006582;
-  // margin: 0 auto;
-  // text-align: center;
-  // display: flex;
-  // align-self: center;
-  // flex-direction: column;
-  margin: auto !important;
-
-  .traits-top {
-    @extend %wave;
-    position: relative;
-    top: -5px !important;
-
-    background-color: #212529;
-  }
-  // .traits-bottom {
-  //   @extend %wave;
-  //   background-color: #006582;
-  // }
-  .traits-title {
-    margin-top: 5vh !important;
-  }
-}
-
-//TEAM
-#team {
-  .team-top {
-    @extend %wave;
-    width: 100% !important;
-    height: 10vh !important;
-    background-color: #006582;
-  }
-  .frame-profile-pic {
-    width: 40vw;
-    max-width: 1000px;
-  }
-  .deviantart-logo {
-    max-width: 75px;
-    border-radius: 50%;
-    margin: 0 auto;
-    text-align: center;
-    // background-color: #fff;
-    box-shadow: 0px 0px 0px 0px #0ff;
-    transition: all 0.3s;
-  }
-  .deviantart-logo:hover {
-    box-shadow: 0px 0px 10px 10px #0ff;
-    transition: all 0.3s;
-  }
-  .team-bottom {
-    @extend %downTriangle;
-    background-color: #006582;
-    position: relative;
-    top: 3px !important;
-  }
-}
-//team
-@media only screen and (max-width: 768px) {
-  .frame-profile-pic {
-    width: 80% !important;
-  }
-}
-
-//FOOTER
-#footer {
-  .footer-top {
-    // @extend %upwardTriangle;
-  }
-
-  border-bottom: 2px solid var(--secondary);
-  background-color: #006582;
+.text-shadow {
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }

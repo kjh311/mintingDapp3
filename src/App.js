@@ -194,7 +194,7 @@ function App() {
   }, [blockchain.account]);
 
   return (
-    <s.Screen>
+    <s.Screen id="mint-section">
       <s.Container
         id="mint"
         className="section"
@@ -405,6 +405,7 @@ function App() {
 
           <s.SpacerSmall />
           <s.TextDescription
+            className="app-last-item"
             style={{
               textAlign: "center",
               color: "var(--primary-text)",

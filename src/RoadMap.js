@@ -1,13 +1,21 @@
-import React, { useEffect, useState, useRef } from "react";
+// import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 // import CountdownTimer from "./CountdownTimer";
 import Countdown from "react-countdown-to-future-date";
+import { gsap } from "gsap";
 
 class RoadMap extends React.Component {
   render() {
     return (
       <div id="road-map" className="section">
-        <div className="roadmap-top"></div>
-        <h1 className="center bubblegum text-shadow">RoadMap</h1>
+        {/* <div className="roadmap-top"></div> */}
+        {/* <div className="roadmap-top-div">
+          <img
+            className="roadmap-top-img"
+            src="config/images/Triangle-Up.svg"
+          />
+        </div> */}
+        <h1 className="center bubblegum text-shadow roadmap-title">RoadMap</h1>
         <br />
         <div className="minting-time bubblegum">
           <h3>

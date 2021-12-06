@@ -28,7 +28,7 @@ class Navbar extends React.Component {
             <ul className="navbar-nav mr-auto d-flex justify-content-end align-items-center">
               {/* <a href="#" class="navbar-left"><img src="/path/to/image.png"></a> */}
               <li className="nav-item active">
-                <a className="nav-link" href="#about">
+                <a className="nav-link" href="#about-text">
                   About
                 </a>
               </li>
@@ -74,7 +74,7 @@ class Navbar extends React.Component {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="https://twitter.com/KevDogNft"
+                  href="https://discord.com/channels/916817609834512426/916817610333642764"
                   target="_blank"
                 >
                   {/* <img

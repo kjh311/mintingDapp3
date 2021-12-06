@@ -8,7 +8,7 @@ import RoadMap from "./RoadMap";
 import Traits from "./Traits";
 import Team from "./Team";
 import Footer from "./Footer";
-
+import { gsap } from "gsap";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";

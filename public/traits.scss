@@ -1,0 +1,22 @@
+//TRAITS
+#traits {
+  background-color: #006582;
+  // margin: 0 auto;
+  // text-align: center;
+  // display: flex;
+  // align-self: center;
+  // flex-direction: column;
+  margin: auto !important;
+  // padding-bottom: 15vh;
+
+  // .traits-bottom {
+  //   @extend %wave;
+  //   background-color: #006582;
+  // }
+  .traits-title {
+    margin-top: 15vh !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}

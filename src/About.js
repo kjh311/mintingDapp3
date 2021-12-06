@@ -258,7 +258,10 @@ class About extends React.Component {
         />
         <br />
         <br />
-        <div className="intro-paragraph d-flex justify-content-center">
+        <div
+          id="about-text"
+          className="intro-paragraph d-flex justify-content-center"
+        >
           <p className="intro-text">
             <span className="big-font">DWEEBLEZ</span> are{" "}
             <span className="intro-digits big-font">10,000</span> fun loving
@@ -273,9 +276,9 @@ class About extends React.Component {
             th at <span className="intro-digits big-font">7</span>pm PST.
           </p>
         </div>
-        <div className="about-bottom">
-          <p className="mint-title">MINT</p>
-        </div>
+        {/* <div className="about-bottom"> */}
+        {/* <p className="mint-title">MINT</p>
+        </div> */}
       </div>
     );
   }
