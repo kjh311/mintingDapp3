@@ -242,10 +242,6 @@ class About extends React.Component {
         original: "/config/images/carousel/54.jpg",
         thumbnail: "/config/images/carousel/54.jpg",
       },
-      {
-        original: "/config/images/carousel/55.jpg",
-        thumbnail: "/config/images/carousel/55.jpg",
-      },
     ];
   }
   render() {
@@ -265,15 +261,17 @@ class About extends React.Component {
           <p className="intro-text">
             <span className="big-font">DWEEBLEZ</span> are{" "}
             <span className="intro-digits big-font">10,000</span> fun loving
-            characters living on the Polygon Blockchain...and in your heart
-            (Awww!). <br /> Taking inspiration from <em>Family Guy</em>, King of
-            the Hill, and a bit of Garbage Pail Kids, each Dweeble is a one of a
-            kind, randomly generated artwork made from{" "}
-            <span className="intro-digits big-font">141</span> unique
-            attributes, and will cost{" "}
-            <span className="intro-digits big-font">120 Matic</span> each.
-            <br /> Minting Dec <span className="intro-digits big-font">17</span>
-            th at <span className="intro-digits big-font">7</span>pm PST.
+            characters living on the{" "}
+            <span className="intro-digits big-font">Polygon</span>{" "}
+            Blockchain...and in your heart (Awww!). <br /> Taking inspiration
+            from <em>Family Guy</em>, King of the Hill, and a bit of Garbage
+            Pail Kids, each Dweeble is a one of a kind, randomly generated
+            artwork made from <span className="intro-digits big-font">141</span>{" "}
+            unique attributes. Come for the fun, stay for the giveaways!
+            <br />
+            <br /> Minting Dec{" "}
+            <span className="intro-digits big-font">27th </span>
+            at <span className="intro-digits big-font">7pm PST</span>
           </p>
         </div>
         {/* <div className="about-bottom"> */}

@@ -13,10 +13,24 @@
   //   @extend %wave;
   //   background-color: #006582;
   // }
+  .rarities-row {
+    margin-top: 4vh !important;
+  }
+  .rarities-img {
+    max-width: 25vw;
+    border-radius: 2vw;
+    border: 2px solid var(--secondary);
+    margin-bottom: 5vh !important;
+  }
   .traits-title {
     margin-top: 15vh !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .rarities-img {
+    margin: 0 auto;
+    max-width: 65vw !important;
+    max-width: 65vw !important;
+  }
 }

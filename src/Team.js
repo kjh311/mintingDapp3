@@ -13,9 +13,12 @@ class Team extends React.Component {
             src="/config/images/Web-Profile.png"
           />
           <h1 className="bubblegum text-shadow">"El Moco Loco"</h1>
-          <h4 className="bubblegum">
+          <h4 className="bubblegum team-text">
             Artist, Programmer, and Project Manager.
             <br /> I can do it all, baby!
+            <br />I like animals, the outdoors, and retro games.
+            <br />
+            Cheers, friends!
           </h4>
           <br />
           <a

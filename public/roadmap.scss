@@ -33,6 +33,17 @@ ul {
   padding-left: 0 !important;
 }
 
+.wwf {
+  border: 5px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+  border-radius: 2vw;
+  max-height: 20vh;
+}
+.wwf:hover {
+  border: 5px solid var(--secondary);
+  transition: all 0.3s;
+}
+
 .minting-time {
   max-width: 80%;
   margin: 0 auto;
@@ -78,9 +89,13 @@ ul {
   .mint-countdown,
   .minting-time > .react-countdown-container > h1,
   .react-countdown-container {
-    font-size: 30px !important;
+    font-size: 35px !important;
     text-shadow: 2px 2px #006582;
     color: var(--secondary) !important;
+    padding: 1vw;
+    // margin-top: 4vw !important;
+    border-radius: 2vw;
+    border: 2px solid var(--blue);
   }
   .phase-six-details {
     max-width: 60vw;

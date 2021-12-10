@@ -41,9 +41,21 @@
 #traits {
   background-color: #006582;
   margin: auto !important; }
+  #traits .rarities-row {
+    margin-top: 4vh !important; }
+  #traits .rarities-img {
+    max-width: 25vw;
+    border-radius: 2vw;
+    border: 2px solid var(--secondary);
+    margin-bottom: 5vh !important; }
   #traits .traits-title {
     margin-top: 15vh !important; }
 
+@media only screen and (max-width: 768px) {
+  .rarities-img {
+    margin: 0 auto;
+    max-width: 65vw !important;
+    max-width: 65vw !important; } }
 #about {
   padding-top: 20px !important;
   font-family: "BubbleGum";
@@ -457,6 +469,16 @@
 ul {
   padding-left: 0 !important; }
 
+.wwf {
+  border: 5px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+  border-radius: 2vw;
+  max-height: 20vh; }
+
+.wwf:hover {
+  border: 5px solid var(--secondary);
+  transition: all 0.3s; }
+
 .minting-time {
   max-width: 80%;
   margin: 0 auto; }
@@ -474,9 +496,12 @@ ul {
   #road-map .mint-countdown,
   #road-map .minting-time > .react-countdown-container > h1,
   #road-map .react-countdown-container {
-    font-size: 30px !important;
+    font-size: 35px !important;
     text-shadow: 2px 2px #006582;
-    color: var(--secondary) !important; }
+    color: var(--secondary) !important;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: 2px solid var(--blue); }
   #road-map .phase-six-details {
     max-width: 60vw;
     text-align: center;
@@ -491,7 +516,9 @@ ul {
   position: relative;
   z-index: 3 !important; }
   #team .team-title {
-    padding-top: 5vh; }
+    padding-top: 10vh; }
+  #team .team-text {
+    line-height: 30px !important; }
   #team .frame-profile-pic {
     width: 40vw;
     max-width: 1000px; }

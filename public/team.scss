@@ -3,7 +3,10 @@
   position: relative;
   z-index: 3 !important;
   .team-title {
-    padding-top: 5vh;
+    padding-top: 10vh;
+  }
+  .team-text {
+    line-height: 30px !important;
   }
   .frame-profile-pic {
     width: 40vw;

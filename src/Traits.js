@@ -31,6 +31,24 @@ class Traits extends React.Component {
               </li>
             </ul>
           </div>
+
+          <div className="row rarities-row">
+            <h1 className="text-shadow">Rarities:</h1>
+            <div className="col-12 col-md-6 rarities-div">
+              <p>Gold Bitcoin Necklace</p>
+              <img
+                className="rarities-img"
+                src="config/images/gold-necklace.jpg"
+              />
+            </div>
+            <div className="col-12 col-md-6">
+              <p>Frickin' Laser Eyes</p>
+              <img
+                className="rarities-img"
+                src="config/images/laser-eyes.png"
+              />
+            </div>
+          </div>
         </div>
       </div>
     );
