@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Cotton Butter";
+  src: url("CottonButter.eot");
+  src: url("CottonButter.eot?#iefix") format("embedded-opentype"),
+    url("CottonButter.woff2") format("woff2"),
+    url("CottonButter.woff") format("woff"),
+    url("CottonButter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.cotton-butter {
+  font-family: "Cotton Butter" !important;
+}
+
+@font-face {
+  font-family: "Superfats";
+  src: url("Superfats.eot");
+  src: url("Superfats.eot?#iefix") format("embedded-opentype"),
+    url("Superfats.woff2") format("woff2"), url("Superfats.woff") format("woff"),
+    url("Superfats.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.superfats {
+  font-family: "Superfats" !important;
+}
+
+@font-face {
+  font-family: "BubbleGum";
+  src: url("BubbleGum.eot");
+  src: url("BubbleGum.eot?#iefix") format("embedded-opentype"),
+    url("BubbleGum.woff2") format("woff2"), url("BubbleGum.woff") format("woff"),
+    url("BubbleGum.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.bubblegum {
+  font-family: "BubbleGum" !important;
+}
+
+@font-face {
+  font-family: "Awesome Possum Demo";
+  src: url("AwesomePossumDemo-Regular.eot");
+  src: url("AwesomePossumDemo-Regular.eot?#iefix") format("embedded-opentype"),
+    url("AwesomePossumDemo-Regular.woff2") format("woff2"),
+    url("AwesomePossumDemo-Regular.woff") format("woff"),
+    url("AwesomePossumDemo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.awesome-possum {
+  font-family: "Awesome Possum Demo" !important;
+}
